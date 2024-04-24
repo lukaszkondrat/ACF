@@ -1,0 +1,18 @@
+.btnbox {
+  max-width: 70%;
+  text-align: center;
+}
+
+.quote {
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+  text-align: center;
+  text-shadow: var(--color-brand-4) 1px 0 10px;
+}
+
+.author {
+  text-align: right;
+  color: var(--color-brand-8);
+  font-size: 1.2rem;
+  margin: 0 1.6rem 0.6rem 0;
+}

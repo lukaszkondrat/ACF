@@ -1,0 +1,9 @@
+.btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  scale: 1.3;
+}

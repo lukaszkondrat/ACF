@@ -1,0 +1,64 @@
+.container {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.item label {
+  text-transform: uppercase;
+}
+
+.item input {
+  width: 24rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--color-brand-1);
+  border-radius: 0.8rem;
+  outline: none;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.2);
+  resize: none;
+}
+
+.item input:focus {
+  border: 2px solid sandybrown;
+}
+
+.item input::placeholder {
+  color: gray;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 3rem;
+  }
+
+  .form {
+    margin-top: 1rem;
+  }
+
+  .item {
+    width: 24rem;
+  }
+
+  .item input {
+    width: 18rem;
+  }
+}

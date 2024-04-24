@@ -1,0 +1,61 @@
+.box {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  margin: 2rem;
+}
+
+.item {
+  width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.item label {
+  text-transform: uppercase;
+}
+
+.item input,
+.item textarea {
+  width: 28rem;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: var(--color-brand-1);
+  border-radius: 0.8rem;
+  outline: none;
+  box-shadow: 1px 1px 1px rgb(0, 0, 0, 0.2);
+  resize: none;
+}
+
+.item input:focus,
+.item textarea:focus {
+  border: 2px solid sandybrown;
+}
+
+.item input::placeholder,
+.item textarea::placeholder {
+  color: gray;
+  text-align: left;
+}
+.warning {
+  color: red;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mapContainer {
+  height: 46rem;
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.btn:hover {
+  scale: 1.2;
+}
+
+.emoji {
+  font-size: 1.6rem;
+}

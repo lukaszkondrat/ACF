@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.photos img {
+  width: 100%;
+  filter: drop-shadow(0 0 0.6rem var(--color-brand-8));
+}
+
+.photos img:hover {
+  opacity: 0.5;
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 600px) {
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

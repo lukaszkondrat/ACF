@@ -1,0 +1,26 @@
+.card {
+  padding: 0.6rem;
+  margin: 0.6rem;
+  font-size: 1.2rem;
+  background-color: var(--color-brand-3);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  border: 1.5px solid sandybrown;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

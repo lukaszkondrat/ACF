@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto+Mono&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  transform: translate(-10%);
+}
+
+.container ul {
+  list-style: none;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.item {
+  padding: 1.2rem;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  font-family: "Grape Nuts", cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: black 1px 0 35px;
+  color: var(--color-brand-5);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 1.2rem;
+    transform: none;
+    width: 80%;
+  }
+
+  .container ul {
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .item {
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .item:last-child {
+    display: flex;
+    justify-content: center;
+    scale: 70%;
+  }
+
+  .highlight {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 0;
+  }
+}

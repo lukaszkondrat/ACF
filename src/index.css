@@ -1,4 +1,17 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
 @import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+:root {
+  --color-brand-1: #d8f5fb;
+  --color-brand-2: #ade8f4;
+  --color-brand-3: #8fe1ef;
+  --color-brand-4: #48cae4;
+  --color-brand-5: #00b4d8;
+  --color-brand-6: #0096c7;
+  --color-brand-7: #0077b6;
+  --color-brand-8: #023e8a;
+  --color-brand-9: #03045e;
+}
 
 * {
   margin: 0;
@@ -13,7 +26,8 @@ html {
 
 body {
   font-family: "Salsa", cursive;
-  color: #0f1035;
+  color: var(--color-brand-9);
+  /* background: linear-gradient(130deg, white 70%, var(--color-brand-4)); */
   font-weight: 400;
   line-height: 1.6;
 }

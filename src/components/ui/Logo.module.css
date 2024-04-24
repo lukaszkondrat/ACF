@@ -1,0 +1,26 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  height: 25rem;
+  width: 25rem;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    margin-top: 1rem;
+    height: 17rem;
+    width: 17rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo img {
+    margin-top: 1rem;
+    height: 20rem;
+    width: 20rem;
+  }
+}
