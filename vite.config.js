@@ -10,7 +10,7 @@ export default defineConfig({
       external: ['@supabase/supabase-js']
     }
   },
-  plugins: [react(), eslint()]
+  plugins: [cdn({modules:[react(), eslint()]})]
 });
 
 // export default defineConfig({
