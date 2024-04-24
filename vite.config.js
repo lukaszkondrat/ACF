@@ -1,23 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import importToCDN, {autoComplete} from 'vite-plugin-cdn-import';
+import { cdn } from "vite-plugin-cdn2";
 import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
-export default {
-    plugins: [
-        importToCDN({
-            modules: [
-                autoComplete('react'),
-                autoComplete('react-dom')
-            ],
-        }),
-        react(),
-    ],
-}
-
-
-
+export default defineConfig({
+  plugins: [
+    cdn({
+      modules: [[react(), eslint()]],
+    }),
+    react(),
+  ],
+});
 
 // export default defineConfig({
 //   resolve: {
@@ -28,4 +22,3 @@ export default {
 //   },
 //   plugins: [react(), eslint()],
 // });
-
