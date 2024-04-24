@@ -4,12 +4,12 @@ import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), eslint()],
   resolve: {
     alias: {
       'react': 'https://cdn.skypack.dev/react@17',
       'react-dom': 'https://cdn.skypack.dev/react-dom@17'
     }
   },
+  plugins: [react(), eslint()],
 });
 
