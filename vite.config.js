@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import importToCDN from 'vite-plugin-cdn-import';
+import importToCDN, {autoComplete} from 'vite-plugin-cdn-import';
 import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
@@ -8,18 +8,11 @@ export default {
     plugins: [
         importToCDN({
             modules: [
-                {
-                    name: 'react',
-                    var: 'React',
-                    path: `umd/react.production.min.js`,
-                },
-                {
-                    name: 'react-dom',
-                    var: 'ReactDOM',
-                    path: `umd/react-dom.production.min.js`,
-                },
+                autoComplete('react'),
+                autoComplete('react-dom')
             ],
         }),
+        react(),
     ],
 }
 
