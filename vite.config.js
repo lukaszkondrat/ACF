@@ -7,7 +7,7 @@ import eslint from "vite-plugin-eslint";
 export default defineConfig({
   build:{
     rollupOptions: {
-      external: ['@supabase/supabase-js']
+      external: ['/@supabase/supabase-js']
     }
   },
   plugins: [cdn({modules:[react(), eslint()]})]
