@@ -3,7 +3,8 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 
 import { addCountry } from "../../services/apiCountries";
-import { API_KEY, API_URL } from "../../constants";
+import { API_URL } from "../../constants";
+import { config } from "../../config";
 
 import toast from "react-hot-toast";
 
@@ -33,7 +34,9 @@ function AddCountryForm() {
   useEffect(
     function () {
       coordinates.slice(-1).forEach((coords) => {
-        fetch(`${API_URL}lat=${coords.lat}&lon=${coords.lng}&apiKey=${API_KEY}`)
+        fetch(
+          `${API_URL}lat=${coords.lat}&lon=${coords.lng}&apiKey=${config.API_KEY}`
+        )
           .then((response) => response.json())
           .then((result) => {
             addNewPlace({
