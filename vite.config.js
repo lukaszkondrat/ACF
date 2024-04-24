@@ -5,12 +5,12 @@ import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    cdn({
-      modules: [[react(), eslint()]],
-    }),
-    react(),
-  ],
+  build:{
+    rollupOptions: {
+      external: ['@supabase/supabase-js']
+    }
+  },
+  plugins: [react(), eslint()]
 });
 
 // export default defineConfig({
