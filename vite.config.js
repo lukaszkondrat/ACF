@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react"
+import react from "@vitejs/plugin-react";
+import importToCDN from 'vite-plugin-cdn-import';
 import eslint from "vite-plugin-eslint";
 
 // https://vitejs.dev/config/
