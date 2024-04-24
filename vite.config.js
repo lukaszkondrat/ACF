@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), eslint()],
   build: {
     rollupOptions: {
-      external: ['react-router-dom']
+      external: ['react-router-dom','@supabase/supabase-js']
     }
   }
 });
