@@ -15,7 +15,7 @@ function PhotoBox({ cityName, emoji, dispatch }) {
         {emoji}{" "}
         {cityName === "london"
           ? cityName.toUpperCase() + " COACHING"
-          : "ZAJĘCIA W WARSZAWIE"}
+          : "ZAJECIA W WARSZAWIE"}
       </p>
     </div>
   );

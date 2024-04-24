@@ -10,22 +10,22 @@ function SquashInfoPL() {
     <div className={styles.container}>
       <ul>
         <li className={styles.item}>
-          Zajęcia prowadzone przez certyfikowanego{" "}
+          Zajecia prowadzone przez certyfikowanego{" "}
           <span className={styles.highlight}>trenera</span> (ESF/WSF Level 2
-          Coach od 2015r.) - byłego członka polskiej kadry{" "}
+          Coach od 2015r.) - bylego czlonka polskiej kadry{" "}
           <span className={styles.highlight}>Narodowej</span> i 3-krotnego
-          drużynowego <span className={styles.highlight}>mistrza</span> Polski.
+          druzynowego <span className={styles.highlight}>mistrza</span> Polski.
         </li>
         <li className={styles.item}>
-          <span className={styles.highlight}>10+</span> lat doświadczenia w
+          <span className={styles.highlight}>10+</span> lat doswiadczenia w
           nauczaniu
         </li>
         <li className={styles.item}>
-          Indywidualne/grupowe zajęcia dla graczy na{" "}
-          <span className={styles.highlight}>każdym poziomie</span>.
+          Indywidualne/grupowe zajecia dla graczy na{" "}
+          <span className={styles.highlight}>kazdym poziomie</span>.
         </li>
         <li className={styles.item}>
-          Cena za zajęcia od <span className={styles.highlight}>100 PLN/</span>
+          Cena za zajecia od <span className={styles.highlight}>100 PLN/</span>
           1h.
         </li>
         <li className={styles.item}>
