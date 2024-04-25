@@ -5,11 +5,15 @@ import {
   Marker,
   Popup,
   useMapEvents,
+  // GeoJSON,
 } from "react-leaflet";
+
+// import mapData from "../../data/countries.json";
 
 import PlacesContext from "../../store/places-context";
 
 import styles from "./Map.module.css";
+// import "leaflet/dist/leaflet.css";
 
 const startingMapPosition = [50, 20];
 
@@ -21,6 +25,7 @@ function Map({ country, zoom, clickable }) {
       scrollWheelZoom={true}
       className={styles.map}
     >
+      {/* {clickable ? <GeoJSON data={mapData.features} /> : null} */}
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tile.openstreetmap.de/{z}/{x}/{y}.png"

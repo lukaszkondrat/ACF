@@ -16,11 +16,7 @@ function ContactInfo() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img
-          src="././public/instagram.svg"
-          alt="instagram logo"
-          width="60rem"
-        />
+        <img src="/instagram.svg" alt="instagram logo" width="60rem" />
       </a>
     </div>
   );

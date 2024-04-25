@@ -8,6 +8,11 @@ function PhotoBox({ cityName, emoji, dispatch }) {
         alt={`photo of ${cityName}`}
         id={cityName}
         onClick={() => {
+          window.scroll({
+            top: 50,
+            left: 0,
+            behavior: "smooth",
+          });
           dispatch({ type: `click_${cityName}` });
         }}
       />

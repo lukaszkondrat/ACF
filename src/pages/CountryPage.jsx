@@ -12,6 +12,12 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+
   const navigate = useNavigate();
   const { countryId } = useParams();
   const { countries, isLoading } = useGetCountries();
