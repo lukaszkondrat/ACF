@@ -8,12 +8,12 @@ function CountryCard({ country }) {
     <div
       className={styles.card}
       onClick={() => {
-        navigate(`/travels/${country.id}`);
-        window.scroll({
+        window.scrollTo({
           top: 0,
           left: 0,
           behavior: "smooth",
         });
+        navigate(`/travels/${country.id}`);
       }}
     >
       {country.flag} {country.name}
