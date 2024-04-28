@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetCountries } from "../components/travels/useGetCountries";
 
@@ -8,13 +7,11 @@ import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import CountryDetails from "../components/travels/CountryDetails";
 import Map from "../components/travels/Map";
+import ScrollToTop from "../components/ui/ScrollToTop";
 
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const { countryId } = useParams();
   const navigate = useNavigate();
   const { countries, isLoading } = useGetCountries();
@@ -25,6 +22,7 @@ function CountryPage() {
 
   return (
     <Container>
+      <ScrollToTop />
       {isLoading ? (
         <Spinner />
       ) : (

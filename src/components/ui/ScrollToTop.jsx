@@ -10,6 +10,8 @@ const ScrollToTop = () => {
       behavior: "smooth",
     });
   }, [pathname]);
+
+  return null;
 };
 
 export default ScrollToTop;
