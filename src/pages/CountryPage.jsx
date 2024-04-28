@@ -20,6 +20,7 @@ function CountryPage() {
         top: 0,
         left: 0,
         behavior: "smooth",
+        autoKill: false,
       });
     },
     [countryId]
