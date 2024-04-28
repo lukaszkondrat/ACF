@@ -12,6 +12,8 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
+  const { countryId } = useParams();
+
   useEffect(
     function () {
       window.scroll({
@@ -20,11 +22,10 @@ function CountryPage() {
         behavior: "smooth",
       });
     },
-    [window]
+    [countryId]
   );
 
   const navigate = useNavigate();
-  const { countryId } = useParams();
   const { countries, isLoading } = useGetCountries();
 
   function getMatchingCountry() {
