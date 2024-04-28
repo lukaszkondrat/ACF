@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetCountries } from "../components/travels/useGetCountries";
 
@@ -11,6 +12,13 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
+  useEffect(() => {
+    const body = document.querySelector("#root");
+
+    body.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, []);
   const { countryId } = useParams();
   const navigate = useNavigate();
   const { countries, isLoading } = useGetCountries();

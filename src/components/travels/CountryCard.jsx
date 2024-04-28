@@ -8,11 +8,6 @@ function CountryCard({ country }) {
     <div
       className={styles.card}
       onClick={() => {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
         navigate(`/travels/${country.id}`);
       }}
     >
