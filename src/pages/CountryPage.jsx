@@ -13,11 +13,7 @@ import styles from "./CountryPage.module.css";
 
 function CountryPage() {
   useEffect(() => {
-    const body = document.querySelector("#root");
-
-    body.scrollIntoView({
-      behavior: "smooth",
-    });
+    window.scrollTo(0, 0);
   }, []);
   const { countryId } = useParams();
   const navigate = useNavigate();
