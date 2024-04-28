@@ -12,13 +12,16 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
-  useEffect(function () {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
+  useEffect(
+    function () {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    },
+    [window]
+  );
 
   const navigate = useNavigate();
   const { countryId } = useParams();

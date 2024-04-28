@@ -21,6 +21,11 @@ const queryClient = new QueryClient({
 });
 
 function App() {
+  if (window.innerWidth <= 1200) {
+    alert(
+      "Our website can be best experienced on the wide screen of your laptop. If you want to keep using it on your mobile device, we recommed turning the LIGHT mode on"
+    );
+  }
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
