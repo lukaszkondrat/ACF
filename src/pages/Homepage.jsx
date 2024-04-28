@@ -26,7 +26,7 @@ function Homepage() {
       <HomepageNav />
       <Logo />
       <Quotes quote={quote} />
-      <Button onClick={getRandomQuote} btnWidth="16rem">
+      <Button onClick={getRandomQuote} btnWidth="11rem">
         Get inspired!
       </Button>
       <Footer />

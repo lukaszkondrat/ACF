@@ -1,10 +1,10 @@
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetCountries } from "../components/travels/useGetCountries";
 
 import Spinner from "react-bootstrap/Spinner";
 
 import Container from "../components/ui/Container";
-
 import Button from "../components/ui/Button";
 import CountryDetails from "../components/travels/CountryDetails";
 import Map from "../components/travels/Map";
@@ -12,11 +12,13 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+  useEffect(function () {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
 
   const navigate = useNavigate();
   const { countryId } = useParams();

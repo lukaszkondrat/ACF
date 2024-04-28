@@ -16,7 +16,7 @@ function AddCountryForm() {
     name: "",
     flag: "",
     places: [],
-    days: 0,
+    days: "",
     food: [],
     tips: [],
     description: "",

@@ -7,6 +7,7 @@ import MainNav from "../components/nav/MainNav";
 import TravelInfo from "../components/travels/TravelInfo";
 import SearchBar from "../components/travels/SearchBar";
 import Footer from "../components/ui/Footer";
+import WorldMap from "../components/travels/WorldMap";
 
 function TravelsPage() {
   const { countries, isLoading } = useGetCountries();
@@ -14,7 +15,16 @@ function TravelsPage() {
   return (
     <Container>
       <MainNav />
-      <TravelInfo />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <TravelInfo />
+        <WorldMap />
+      </div>
       {!isLoading ? <SearchBar allCountries={countries} /> : <Spinner />}
       <Footer />
     </Container>

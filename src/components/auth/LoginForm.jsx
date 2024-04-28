@@ -32,6 +32,7 @@ function LoginForm() {
 
   return (
     <div className={styles.container}>
+      <p className={styles.text}>Members area</p>
       <Logo />
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.item}>

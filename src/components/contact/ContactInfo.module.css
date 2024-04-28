@@ -3,7 +3,6 @@
 .highlight {
   font-family: "Grape Nuts", cursive;
   font-size: 3.2rem;
-  /* text-transform: uppercase; */
   font-weight: bold;
   text-shadow: black 1px 0 35px;
   color: var(--color-brand-5);

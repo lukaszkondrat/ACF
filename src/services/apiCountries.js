@@ -1,20 +1,5 @@
 import supabase from "./supabase";
 
-// export async function getSingleCountry(id) {
-//   const { data: country, error } = await supabase
-//     .from("countries")
-//     .select()
-//     .eq("id", id)
-//     .single();
-
-//   if (error) {
-//     console.log(error);
-//     throw new Error("Country could not be loaded");
-//   }
-
-//   return country;
-// }
-
 export async function getCountries() {
   const { data, error } = await supabase.from("countries").select("*");
 
