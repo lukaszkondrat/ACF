@@ -57,7 +57,14 @@ function WorldMap() {
             <Popup>
               <div
                 className={styles.popup}
-                onClick={() => navigate(`/travels/${country.id}`)}
+                onClick={() => {
+                  navigate(`/travels/${country.id}`);
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
               >
                 {country.name}
               </div>

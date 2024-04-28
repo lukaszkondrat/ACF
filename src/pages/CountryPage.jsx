@@ -13,19 +13,6 @@ import styles from "./CountryPage.module.css";
 
 function CountryPage() {
   const { countryId } = useParams();
-
-  useEffect(
-    function () {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-        autoKill: false,
-      });
-    },
-    [countryId]
-  );
-
   const navigate = useNavigate();
   const { countries, isLoading } = useGetCountries();
 
