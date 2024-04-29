@@ -1,8 +1,16 @@
-# React + Vite
+It's a personal website, where you can learn about squash coaching opportunities and discover different countries visited by the owner of the website.
+On the client side, the app provides the authorized users with the ability to Create, Read, Update, and Delete visited countries, which are stored in Supabase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Technologies used in this project:
+  Project build with React + Vite.
+  Routing: React Router.
+  Styling: CSS Modules.
+  Remote state management: React Query.
+  Database and authentication: Supabase.
+  Maps: React Leaflet.
+  Other tools: React hot toast, React Bootstrap, Geoapify API
 
-Currently, two official plugins are available:
+The project is hosted on Netlify, live version below:
+  https://actioncures.netlify.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  
