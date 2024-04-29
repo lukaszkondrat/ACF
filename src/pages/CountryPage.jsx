@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetCountries } from "../components/travels/useGetCountries";
 
@@ -12,12 +12,14 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
-  const mapRef = useRef();
-
   useEffect(function () {
-    window.scrollTo({
-      top: document.body.clientTop,
-      behavior: "smooth",
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.body.clientTop,
+        // behavior: "smooth",
+        animated: "false",
+      }),
+        1000;
     });
   }, []);
 
@@ -39,7 +41,7 @@ function CountryPage() {
             🧭 List of all countries
           </Button>
 
-          <div className={styles.mapBox} ref={mapRef}>
+          <div className={styles.mapBox}>
             <Map country={getMatchingCountry()} zoom={6} clickable={false} />
 
             {countries ? (
