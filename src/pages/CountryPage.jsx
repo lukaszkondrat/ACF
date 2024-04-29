@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useGetCountries } from "../components/travels/useGetCountries";
 
@@ -12,10 +12,10 @@ import Map from "../components/travels/Map";
 import styles from "./CountryPage.module.css";
 
 function CountryPage() {
+  const mapRef = useRef();
+
   useEffect(function () {
-    if (window.scrollY > 0) {
-      window.scrollTo(0, 0);
-    }
+    mapRef.current.scrollIntoView();
   }, []);
 
   const { countryId } = useParams();
@@ -36,7 +36,7 @@ function CountryPage() {
             🧭 List of all countries
           </Button>
 
-          <div className={styles.mapBox}>
+          <div className={styles.mapBox} ref={mapRef}>
             <Map country={getMatchingCountry()} zoom={6} clickable={false} />
 
             {countries ? (
