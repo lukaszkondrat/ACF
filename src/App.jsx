@@ -11,7 +11,6 @@ import CountryPage from "./pages/CountryPage";
 import AddEditCountryPage from "./pages/AddEditCountryPage";
 import LoginPage from "./pages/LoginPage";
 import ProtectedRoute from "./components/ui/ProtectedRoute";
-import ScrollToTop from "./components/ui/ScrollToTop";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -30,7 +29,6 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="squash" element={<SquashPage />} />
