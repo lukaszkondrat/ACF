@@ -15,7 +15,10 @@ function CountryPage() {
   const mapRef = useRef();
 
   useEffect(function () {
-    mapRef.current.scrollIntoView();
+    window.scrollTo({
+      top: mapRef.current.offsetTop,
+      behavior: "smooth",
+    });
   }, []);
 
   const { countryId } = useParams();
