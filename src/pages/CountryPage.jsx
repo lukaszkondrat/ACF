@@ -16,7 +16,7 @@ function CountryPage() {
 
   useEffect(function () {
     window.scrollTo({
-      top: mapRef.current.offsetTop,
+      top: document.body.clientTop,
       behavior: "smooth",
     });
   }, []);
