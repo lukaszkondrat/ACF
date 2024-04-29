@@ -1,5 +1,5 @@
 It's a personal website, where you can learn about squash coaching opportunities and discover different countries visited by the owner of the website.
-On the client side, the app provides the authorized users with the ability to Create, Read, Update, and Delete visited countries, which are stored in Supabase.
+On the client side, the app provides the authorized users with the ability to Create, Read, Update, and Delete visited countries, which are stored in Supabase. <br/>
 
 Technologies used in this project:
   Project build with React + Vite.
@@ -8,7 +8,7 @@ Technologies used in this project:
   Remote state management: React Query.
   Database and authentication: Supabase.
   Maps: React Leaflet.
-  Other tools: React hot toast, React Bootstrap, Geoapify API
+  Other tools: React hot toast, React Bootstrap, Geoapify API <br/>
 
 The project is hosted on Netlify, live version below:
   https://actioncures.netlify.app/
