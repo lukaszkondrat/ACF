@@ -7,7 +7,6 @@ import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
 import CountryDetails from "../components/travels/CountryDetails";
 import Map from "../components/travels/Map";
-import ScrollToTop from "../components/ui/ScrollToTop";
 
 import styles from "./CountryPage.module.css";
 
@@ -22,7 +21,6 @@ function CountryPage() {
 
   return (
     <Container>
-      <ScrollToTop />
       {isLoading ? (
         <Spinner />
       ) : (
