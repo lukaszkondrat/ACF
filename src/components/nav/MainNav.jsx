@@ -17,11 +17,11 @@ function MainNav() {
       </div>
       <div className={styles.links}>
         <ul>
-          <li>
+{/*           <li>
             <NavLink to="/squash">
               <span className={styles.emoji}>🎾</span> SQUASH
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/travels">
               <span className={styles.emoji}>🌍</span> TRAVELS
