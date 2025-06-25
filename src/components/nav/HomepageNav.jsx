@@ -6,12 +6,12 @@ function HomepageNav() {
   return (
     <nav className={styles.nav}>
       <ul>
-        <li>
+{/*         <li>
           <NavLink to="/squash">
             <span>🎾</span>
             <span> SQUASH</span>
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/travels">
             <span>🌍</span>
